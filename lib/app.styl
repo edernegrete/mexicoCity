@@ -1,0 +1,55 @@
+.u-title
+	font-size 3em
+.u-description
+	font-size 2em
+.u-fact
+	font-style italic
+	color #953B3B
+@import 'nib'
+@import 'style.styl'
+@import './intro/styles.styl'
+@import './layout/styles.styl'
+@import './food/styles.styl'
+@import './people/styles.styl'
+@import './music/styles.styl'
+@import './culture/styles.styl'
+@import './quote/styles.styl'
+@import './architecture/styles.styl'
+@import './nightLive/styles.styl'
+@import './outro/styles.styl'
+@import './nav/styles.styl'
+a
+	text-decoration none
+	color black
+body
+	font-family 'Arvo'
+	overflow hidden
+	text-align center
+	margin 0
+h2
+	margin 0
+.btn
+	position fixed
+	cursor pointer
+	left 5px
+	top 16px
+	z-index 2
+	font-size 2.5em
+a[id="intro"]:target ~ #main div.Layout-intro
+	transform translateY( 0px )
+a[id="food"]:target ~ #main div.Layout-food
+	transform translateY( -100vh )
+a[id="people"]:target ~ #main div.Layout-people
+	transform translateY( -200vh )
+a[id="music"]:target ~ #main div.Layout-music
+	transform translateY( -300vh )
+a[id="culture"]:target ~ #main div.Layout-culture
+	transform translateY( -400vh )
+a[id="quote"]:target ~ #main div.Layout-quote
+	transform translateY( -500vh )
+a[id="arch"]:target ~ #main div.Layout-architecture
+	transform translateY( -600vh )
+a[id="night"]:target ~ #main div.Layout-nightLife
+	transform translateY( -700vh )
+a[id="outro"]:target ~ #main div.Layout-outro
+	transform translateY( -800vh )
