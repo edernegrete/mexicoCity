@@ -1,6 +1,6 @@
 .Layout
 	div
-		background-position-x -313px
+		background-position-x -206px
 		background-repeat no-repeat
 		background-size cover
 		backface-visibility hidden
@@ -17,10 +17,16 @@
 		background-image url('../images/music.jpg')
 	&-culture
 		background-image url('../images/culture.jpg')
-		background-position-x -497px
 	&-quote
 		background-image url('../images/quote.jpg')
 	&-architecture
 		background-image url('../images/architecture.jpg')
 	&-nightLife
 		background-image url('../images/night.jpg')
+@media screen and (min-width:500px)
+		.Layout
+			div
+				background-position-x initial
+@media screen and (min-width:890px)
+		.Layout-quote
+			background-position-y -284px
